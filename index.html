@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced CSS Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#top">CSS<span>Lab</span></a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#flexbox">Flexbox</a>
+      <a href="#grid">Grid</a>
+      <a href="#portfolio">Portfolio</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="intro">
+      <p class="eyebrow">Assignment #2</p>
+      <h1>Advanced CSS Layouts</h1>
+      <p>A beginner-friendly demonstration of Flexbox, CSS Grid, and responsive design.</p>
+    </section>
+
+    <section id="flexbox" class="section">
+      <p class="eyebrow">Part 1 · Flexbox</p>
+      <h2>Task 0 & 1: Navigation and Card Row</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=600&q=80" alt="Desk with a laptop">
+          <div class="card-content"><h3>Plan</h3><p>Start with a clear layout and simple reusable styles.</p><a class="button" href="#portfolio">Read more</a></div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80" alt="Laptop showing code">
+          <div class="card-content"><h3>Build</h3><p>Use Flexbox for one-dimensional alignment and spacing.</p><a class="button" href="#grid">Read more</a></div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=600&q=80" alt="Colorful design work">
+          <div class="card-content"><h3>Improve</h3><p>Use Grid when a layout needs rows and columns together.</p><a class="button" href="#portfolio">Read more</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="grid" class="section">
+      <p class="eyebrow">Part 2 · Grid System</p>
+      <h2>Task 2: Page Layout with Grid Areas</h2>
+      <div class="page-layout">
+        <header class="layout-header">Header area</header>
+        <aside class="layout-sidebar"><h3>Sidebar</h3><p>Links and supporting information live here.</p></aside>
+        <div class="layout-main"><h3>Main content</h3><p>The header, sidebar, main content, and footer are assigned to named grid areas.</p></div>
+        <footer class="layout-footer">Footer area</footer>
+      </div>
+
+      <h2 class="gallery-title">Task 3: Image Gallery</h2>
+      <div class="gallery">
+        <figure><img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=500&q=80" alt="Modern office"><figcaption>Workspace</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=500&q=80" alt="Bright office"><figcaption>Focus</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=500&q=80" alt="Office table"><figcaption>Teamwork</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=500&q=80" alt="Office interior"><figcaption>Ideas</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1497366412874-3415097a27e7?auto=format&fit=crop&w=500&q=80" alt="Meeting room"><figcaption>Meetings</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=500&q=80" alt="Desk and chairs"><figcaption>Balance</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=500&q=80" alt="Office desk"><figcaption>Work</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=500&q=80" alt="Open office"><figcaption>Connect</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=500&q=80" alt="Clean workspace"><figcaption>Create</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section">
+      <p class="eyebrow">Part 3 · Flexbox + Grid</p>
+      <h2>Task 4: Portfolio Page</h2>
+      <div class="portfolio-layout">
+        <div class="projects">
+          <article class="project"><h3>Landing page</h3><p>A responsive page arranged with CSS Grid.</p><a class="button" href="#top">View project</a></article>
+          <article class="project"><h3>Gallery design</h3><p>A nine-image gallery with captions on hover.</p><a class="button" href="#grid">View project</a></article>
+          <article class="project"><h3>Card system</h3><p>Equal-height cards aligned with Flexbox.</p><a class="button" href="#flexbox">View project</a></article>
+        </div>
+        <aside class="portfolio-info"><h3>About this portfolio</h3><p>The main section uses Grid. Each project uses Flexbox to stack its content and button.</p></aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">Built for Advanced CSS Assignment #2</footer>
+</body>
+</html>
